@@ -1,0 +1,28 @@
+
+The "project Get and Clean Data WPL.R" script followed 5 steps required 
+
+Final Dataset (Tidy data)
+
+
++Get data from zip file
+
+activity_labels.txt
+subject_test.txt
+X_test.txt
+Y_test.txt
+subject_train.txt
+X_train.txt
+y_train.txt
+
++Merge X test and training data with rbin into X table
++Merge Y test and training data with rbin into Y table
++Merge subjectTrain and subjectTest data with rbin into Subject table
++Merge X,Y,Subject with cbin into Merged_Data table
++create a subset from measurement that contains "mean" and "std" call Measurement with select function
+
++ labeled "code" var using lables from activity_labels.txt
+
++ labeled measure names with descriptiv names using gsub
+
++ Created FinalDataWPL.txt (tidy data) using function write.table
+
